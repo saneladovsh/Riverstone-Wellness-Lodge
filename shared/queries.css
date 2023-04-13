@@ -1,0 +1,120 @@
+/****************/
+/*SMALL DESKTOPS*/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+}
+
+/****************/
+/*BELOW 1200 PX*/
+
+@media (max-width: 75em) {
+  html {
+    /*8px / 16 = 0.5 => 50% */
+    font-size: 50%;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+}
+
+/****************/
+/*BELOW 1000 PX*/ /*(1000 / 16 = 62.5  => 62em */
+
+@media (max-width: 62em) {
+  html {
+    /*7px / 16 */
+    font-size: 43%;
+  }
+
+  /* MOBILE NAV */
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    transform: translateX(100%);
+
+    /* display: none; */
+
+    opacity: 0;
+
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translate(0);
+  }
+
+  .nav-open .icon-mobile-nav--close {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/****************/
+/*BELOW 700 PX*/ /*(700 / 16 = 43.7  => 44em */
+
+@media (max-width: 44em) {
+  html {
+    /*4.5px / 16 */
+    font-size: 28%;
+  }
+}
+
+/****************/
+/*BELOW 500 PX*/ /*(500 / 16 = 31.25  => 31em */
+
+@media (max-width: 31em) {
+  html {
+    /*2.5px / 16 */
+    font-size: 15%;
+  }
+}
+
+/****************/
+/*BELOW 300 PX*/ /*(300 / 16 = 18.75  => 19em */
+
+@media (max-width: 19em) {
+  html {
+    /*1px / 16 */
+    font-size: 6%;
+  }
+}

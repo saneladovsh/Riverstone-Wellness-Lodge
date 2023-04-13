@@ -1,0 +1,110 @@
+/****************/
+/*MAIN*/
+
+
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+
+.cta {
+  height: 50rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* background-color: #fae9dd; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 1.1rem;
+  background-image: linear-gradient(to right bottom, #fdf4ee, #fae9dd);
+}
+
+.cta-img-box {
+  background-image: url(../img/back\ 2.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 1.1rem;
+  width: 100%;
+  max-height: 50rem;
+}
+
+
+.cta .heading-secondary {
+  color: #333;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.cta-text-box {
+  padding: 6.4rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 0.9rem;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 1.5rem 3rem;
+  border-radius: 15px;
+  transition: all 0.3s;
+  background-color: #2e5c52;
+  margin-top: 6rem;
+  margin-right: 6rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .cta {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    gap: 0;
+  }
+
+  .cta-img-box {
+    display: none;
+  }
+  .cta-text-box {
+    padding: 6.4rem 3.2rem;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-form input {
+    width: 100%;
+  }
+
+  .btn {
+    margin-top: 3rem;
+    margin-right: 0;
+  }
+}

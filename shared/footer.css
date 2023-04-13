@@ -1,0 +1,105 @@
+.footer {
+  width: 100vw;
+  border-top: 1px solid #fae9dd;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  /* outline: 2px solid yellowgreen; */
+  background-color: #fae9dd;
+  padding-bottom: 3.2rem;
+  box-sizing: border-box;
+}
+
+.footer-heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.8rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.support-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-10%, 0);
+}
+
+.support-company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-70%, 0);
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #191919;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-adress {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.8rem;
+  margin-top: 2.5rem;
+  line-height: 1.8;
+}
+
+.footer-container-logo {
+  position: relative;
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+footer a:link,
+footer a:visited {
+  text-decoration: none;
+  color: #2e5c52;
+  font-weight: 650;
+  font-size: 1.3rem;
+  transition: all 0.3s;
+}
+
+footer a:hover,
+footer a:active {
+  color: #88aba4 !important;
+}
+/* @media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-heading {
+    margin-bottom: 1.2rem;
+  }
+
+  .footer-adress {
+    margin-bottom: 1.2rem;
+  }
+
+  .footer-container-logo {
+    padding: 3.2rem 2.4rem 2.4rem 2.4rem;
+  }
+} */
