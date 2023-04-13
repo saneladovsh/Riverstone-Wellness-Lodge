@@ -30,7 +30,7 @@
 
 .carousel {
   background-color: #fae9dd;
-  width: 100%;
+  width: 90vw;
   flex-shrink: 0;
   padding: 3.2rem;
   padding-left: 10rem;
@@ -41,6 +41,7 @@
   align-items: center;
   gap: 2rem;
   margin: 4vh 0;
+  box-sizing: border-box;
 }
 
 .title-section-box {

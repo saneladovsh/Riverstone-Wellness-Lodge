@@ -5,7 +5,7 @@ const carouselItems = document.querySelector(".carousel-container");
 let currentIndex = 0;
 
 function showSquare(index) {
-  carouselItems.style.transform = `translateX(-${index * 100}%)`;
+  carouselItems.style.transform = `translateX(-${index * 100}vw)`;
 }
 
 prevButton.addEventListener("click", () => {
